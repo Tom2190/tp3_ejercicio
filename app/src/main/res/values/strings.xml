@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjercicioTP3</string>
+    <string name="usuario_nombre">Ingrese el usuario</string>
+    <string name="usuario_password">Ingrese el password</string>
+    <string name="btn_texto">Ingresar al equipo</string>
+    <string name="btn_perfil_texto">Editar Perfil</string>
+    <string name="btn_settings_texto">Settings</string>
+    <string name="settings">Preferencias</string>
+    <string name="dark_mode">Modo oscuro</string>
+</resources>

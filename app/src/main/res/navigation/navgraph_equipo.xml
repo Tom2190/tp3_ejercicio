@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/equipoFutbol">
+    <fragment
+        android:id="@+id/equipoFutbol"
+        android:name="com.example.ejercicio.fragments.EquipoFutbolFragment"
+        android:label="equipo_fragment"
+        tools:layout="@layout/equipo_fragment">
+        <action
+            android:id="@+id/action_equipoFutbol_to_jugadorFragment"
+            app:destination="@id/jugadorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jugadorFragment"
+        android:name="com.example.ejercicio.fragments.JugadorFragment"
+        android:label="jugador_fragment"
+        tools:layout="@layout/jugador_fragment" >
+        <argument android:name="jugador"
+            app:argType="com.example.ejercicio.entities.Jugador" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ejercicio.fragments.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsActivity2"
+            app:destination="@id/settingsActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity2"
+        android:name="com.example.ejercicio.activities.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+</navigation>
